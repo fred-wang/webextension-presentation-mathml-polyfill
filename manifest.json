@@ -1,0 +1,12 @@
+{
+  "manifest_version": 2,
+  "name": "Presentation MathML Polyfill",
+  "version": "2.0",
+  "description": "Add support for some advanced presentation MathML features",
+  "author": "Frédéric Wang",
+  "homepage_url": "https://github.com/fred-wang/webextension-presentation-mathml-polyfill",
+  "icons": {
+    "48": "icons/icon-48.png",
+    "96": "icons/icon-96.png"
+  }
+}
