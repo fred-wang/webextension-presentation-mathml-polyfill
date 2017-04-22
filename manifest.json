@@ -14,7 +14,8 @@
       "matches": ["<all_urls>"],
       "all_frames": true,
       "js": [
-        "content-scripts/mfenced.js"
+        "content-scripts/mfenced.js",
+        "content-scripts/mlabeledtr.js"
       ],
       "run_at": "document_end"
     }

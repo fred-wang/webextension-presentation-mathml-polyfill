@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The &lt;mlabeledtr&gt; Element</title>
+    <meta charset="utf-8"/>
+  </head>
+  <body>
+    <h1>The &lt;mlabeledtr&gt; Element</h1>
+
+    <p>This page contains some tests for the <a href="https://www.w3.org/TR/MathML3/chapter3.html#presm.mlabeledtr">mlabeledtr element</a>.</p>
+
+    <ol>
+      <li>empty (invalid):
+        <math display="block">
+          <mtable>
+            <mlabeledtr></mlabeledtr>
+          </mtable>
+          <mtable>
+            <mlabeledtr side="left"></mlabeledtr>
+          </mtable>
+          <mtable>
+            <mlabeledtr side="right"></mlabeledtr>
+          </mtable>
+        </math>
+      </li>
+      <li>one child:
+        <math display="block">
+          <mtable>
+            <mlabeledtr>
+              <mtd><mtext>(default side)</mtext></mtd>
+              <mtd>
+                <mspace width="100px" height="50px" mathbackground="red"/>
+              </mtd>
+            </mlabeledtr>
+          </mtable>
+        </math>
+        <math display="block">
+          <mtable>
+            <mlabeledtr side="left">
+              <mtd><mtext>(side="left")</mtext></mtd>
+              <mtd>
+                <mspace width="100px" height="50px" mathbackground="green"/>
+              </mtd>
+            </mlabeledtr>
+          </mtable>
+        </math>
+        <math display="block">
+          <mtable>
+            <mlabeledtr side="right">
+              <mtd><mtext>(side="right")</mtext></mtd>
+              <mtd>
+                <mspace width="100px" height="50px" mathbackground="blue"/>
+              </mtd>
+            </mlabeledtr>
+          </mtable>
+        </math>
+      </li>
+      <li>several children:
+        <math display="block">
+          <mtable>
+            <mlabeledtr>
+              <mtd><mtext>(default side)</mtext></mtd>
+              <mtd><mspace width="25px" height="15px" depth="5px" mathbackground="red"/></mtd>
+              <mtd><mspace width="10px" height="20px" depth="20px" mathbackground="green"/></mtd>
+              <mtd><mspace width="50px" height="5px" depth="15px" mathbackground="blue"/></mtd>
+            </mlabeledtr>
+          </mtable>
+        </math>
+        <math display="block">
+          <mtable>
+            <mlabeledtr side="left">
+              <mtd><mtext>(side="left")</mtext></mtd>
+              <mtd><mspace width="25px" height="15px" depth="5px" mathbackground="red"/></mtd>
+              <mtd><mspace width="10px" height="20px" depth="20px" mathbackground="green"/></mtd>
+              <mtd><mspace width="50px" height="5px" depth="15px" mathbackground="blue"/></mtd>
+            </mlabeledtr>
+          </mtable>
+        </math>
+        <math display="block">
+          <mtable>
+            <mlabeledtr side="right">
+              <mtd><mtext>(side="right")</mtext></mtd>
+              <mtd><mspace width="25px" height="15px" depth="5px" mathbackground="red"/></mtd>
+              <mtd><mspace width="10px" height="20px" depth="20px" mathbackground="green"/></mtd>
+              <mtd><mspace width="50px" height="5px" depth="15px" mathbackground="blue"/></mtd>
+            </mlabeledtr>
+          </mtable>
+        </math>
+      </li>
+      <li>several rows:
+        <math display="block">
+          <mtable>
+            <mlabeledtr>
+              <mtd><mtext>(default side)</mtext></mtd>
+              <mtd>
+                <mspace width="100px" height="20px" mathbackground="red"/>
+              </mtd>
+            </mlabeledtr>
+            <mlabeledtr>
+              <mtd><mtext>(default side)</mtext></mtd>
+              <mtd>
+                <mspace width="30px" height="20px" mathbackground="green"/>
+              </mtd>
+            </mlabeledtr>
+            <mlabeledtr>
+              <mtd><mtext>(default side)</mtext></mtd>
+              <mtd>
+                <mspace width="200px" height="10px" mathbackground="blue"/>
+              </mtd>
+            </mlabeledtr>
+          </mtable>
+        </math>
+        <math display="block">
+          <mtable>
+            <mlabeledtr side="left">
+              <mtd><mtext>(side="left")</mtext></mtd>
+              <mtd>
+                <mspace width="100px" height="20px" mathbackground="red"/>
+              </mtd>
+            </mlabeledtr>
+            <mlabeledtr side="left">
+              <mtd><mtext>(side="left")</mtext></mtd>
+              <mtd>
+                <mspace width="30px" height="20px" mathbackground="green"/>
+              </mtd>
+            </mlabeledtr>
+            <mlabeledtr side="left">
+              <mtd><mtext>(side="left")</mtext></mtd>
+              <mtd>
+                <mspace width="200px" height="10px" mathbackground="blue"/>
+              </mtd>
+            </mlabeledtr>
+          </mtable>
+        </math>
+        <math display="block">
+          <mtable>
+            <mlabeledtr side="right">
+              <mtd><mtext>(side="right")</mtext></mtd>
+              <mtd>
+                <mspace width="100px" height="20px" mathbackground="red"/>
+              </mtd>
+            </mlabeledtr>
+            <mlabeledtr side="right">
+              <mtd><mtext>(side="right")</mtext></mtd>
+              <mtd>
+                <mspace width="30px" height="20px" mathbackground="green"/>
+              </mtd>
+            </mlabeledtr>
+            <mlabeledtr side="right">
+              <mtd><mtext>(side="right")</mtext></mtd>
+              <mtd>
+                <mspace width="200px" height="10px" mathbackground="blue"/>
+              </mtd>
+            </mlabeledtr>
+          </mtable>
+        </math>
+      </li>
+      <li>mixing left/right sides:
+        <math display="block">
+          <mtable>
+            <mlabeledtr side="left">
+              <mtd><mtext>(side="left")</mtext></mtd>
+              <mtd>
+                <mspace width="90px" height="40px" mathbackground="red"/>
+              </mtd>
+            </mlabeledtr>
+            <mlabeledtr side="right">
+              <mtd><mtext>(side="right")</mtext></mtd>
+              <mtd>
+                <mspace width="80px" height="30px" mathbackground="green"/>
+              </mtd>
+            </mlabeledtr>
+          </mtable>
+        </math>
+      </li>
+      <li>mixing with mtr:
+        <math display="block">
+          <mtable>
+            <mlabeledtr side="left">
+              <mtd><mtext>(side="left")</mtext></mtd>
+              <mtd>
+                <mspace width="90px" height="40px" mathbackground="red"/>
+              </mtd>
+            </mlabeledtr>
+            <mtr>
+              <mtd>
+                <mspace width="80px" height="30px" mathbackground="green"/>
+              </mtd>
+            </mtr>
+          </mtable>
+        </math>
+        <math display="block">
+          <mtable>
+            <mlabeledtr side="right">
+              <mtd><mtext>(side="right")</mtext></mtd>
+              <mtd>
+                <mspace width="90px" height="40px" mathbackground="red"/>
+              </mtd>
+            </mlabeledtr>
+            <mtr>
+              <mtd>
+                <mspace width="80px" height="30px" mathbackground="green"/>
+              </mtd>
+            </mtr>
+          </mtable>
+        </math>
+      </li>
+      <li>complex:
+        <math display="block">
+          <mtable>
+            <mlabeledtr side="right">
+              <mtd><mtext>(side="right")</mtext></mtd>
+              <mtd><mspace width="25px" height="15px" depth="5px" mathbackground="red"/></mtd>
+              <mtd><mspace width="10px" height="20px" depth="20px" mathbackground="green"/></mtd>
+              <mtd><mspace width="50px" height="5px" depth="15px" mathbackground="blue"/></mtd>
+            </mlabeledtr>
+            <mtr>
+              <mtd><mspace width="45px" height="15px" depth="5px" mathbackground="red"/></mtd>
+              <mtd><mspace width="20px" height="20px" depth="20px" mathbackground="green"/></mtd>
+              <mtd><mspace width="90px" height="5px" depth="15px" mathbackground="blue"/></mtd>
+            </mtr>
+            <mlabeledtr side="right">
+              <mtd><mtext>(side="right")</mtext></mtd>
+              <mtd><mspace width="15px" height="15px" depth="5px" mathbackground="red"/></mtd>
+              <mtd><mspace width="40px" height="20px" depth="20px" mathbackground="green"/></mtd>
+              <mtd><mspace width="20px" height="5px" depth="15px" mathbackground="blue"/></mtd>
+            </mlabeledtr>
+            <mtr>
+              <mtd><mspace width="45px" height="15px" depth="5px" mathbackground="red"/></mtd>
+              <mtd><mspace width="20px" height="20px" depth="20px" mathbackground="green"/></mtd>
+              <mtd><mspace width="90px" height="5px" depth="15px" mathbackground="blue"/></mtd>
+            </mtr>
+            <mlabeledtr side="left">
+              <mtd><mtext>(side="left")</mtext></mtd>
+              <mtd><mspace width="25px" height="15px" depth="5px" mathbackground="red"/></mtd>
+              <mtd><mspace width="10px" height="20px" depth="20px" mathbackground="green"/></mtd>
+              <mtd><mspace width="50px" height="5px" depth="15px" mathbackground="blue"/></mtd>
+            </mlabeledtr>
+            <mtr>
+              <mtd><mspace width="45px" height="15px" depth="5px" mathbackground="red"/></mtd>
+              <mtd><mspace width="20px" height="20px" depth="20px" mathbackground="green"/></mtd>
+              <mtd><mspace width="90px" height="5px" depth="15px" mathbackground="blue"/></mtd>
+            </mtr>
+            <mlabeledtr side="left">
+              <mtd><mtext>(side="left")</mtext></mtd>
+              <mtd><mspace width="15px" height="15px" depth="5px" mathbackground="red"/></mtd>
+              <mtd><mspace width="40px" height="20px" depth="20px" mathbackground="green"/></mtd>
+              <mtd><mspace width="20px" height="5px" depth="15px" mathbackground="blue"/></mtd>
+            </mlabeledtr>
+          </mtable>
+        </math>
+      </li>
+    </ol>
+
+  </body>
+</html>
