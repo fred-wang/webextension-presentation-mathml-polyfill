@@ -14,8 +14,12 @@
       "matches": ["<all_urls>"],
       "all_frames": true,
       "js": [
+        "content-scripts/elementary-math.js",
         "content-scripts/mfenced.js",
         "content-scripts/mlabeledtr.js"
+      ],
+      "web_accessible_resources": [
+        "elementary-math.xsl"
       ],
       "run_at": "document_end"
     }
